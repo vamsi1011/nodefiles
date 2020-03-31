@@ -1,0 +1,52 @@
+root
+create folder test
+set permissions
+upload installation,htaccess,app.config files
+give permissions to installation.sh file - chmod 700 installation.sh
+./installation.sh
+no for all frame works
+/opt/lampstack
+set database password defalt jobiak123
+copy htaccess and app.config files
+cp htaccess app.config /opt/lampstack/apps/phpmyadmin/conf
+go to /opt/lampstack 
+./ctlscript.sh restart
+
+original server
+opt
+lampstack
+apache2
+htdocs
+tar -cvf filename.tar .htaccess *
+/opt/lampstack/mysql/bin/mysql -u root_user -p
+password - vizagtesting
+show databases;
+/opt/lampstack/mysql/bin/mysqldump -u root_user -p dataorgs > dataorgs.sql
+scp dataorgs.sql root@104.237.13.46:/opt/
+cd /opt/lampstack/apache2/htdocs/ (go to backup)
+scp dataorgs.tar root@104.237.13.46:/opt/
+
+cd /opt/
+sudo su
+mkdir backup
+mv filename.tar backup/
+tar -xvf filename.tar
+cp filename.tar /opt/lampstack/apache2/htdocs
+tar -xvf filename.tar
+rm -rf filename.tar
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+create database 
+CREATE USER 'aidreamjobsbot'@'localhost' IDENTIFIED BY 'jnQlMeRHGC6F5GFF';
+
+GRANT ALL PRIVILEGES ON `dataorgs`.* TO 'dataorgsbot'@'localhost';
+root@activityrobotics:/opt# /opt/lampstack/mysql/bin/mysql -u dataorgsbot -p
+use databasename
+source activityrobotics.sql;
+
+oWJjIKP5j7plGovg
+
+
+
+
+
